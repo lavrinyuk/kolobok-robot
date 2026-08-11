@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>KOLOBOK CONTROL</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <h2>Управление Колобком</h2>
+
+  <div class="kp-panel">
+    <input type="number" id="kp-input" placeholder="Kp" step="0.1">
+    <button id="kp-send-btn">ОК</button>
+
+<input type="number" id="kd-input" placeholder="Kd" step="0.1">
+<button id="kd-send-btn">ОК</button>
+
+<input type="number" id="ki-input" placeholder="Ki" step="0.1">
+<button id="ki-send-btn">ОК</button>
+
+  </div>
+
+  <div class="telemetry">
+    <div id="angle-x-display">Угол X: 0&deg;</div>
+    <div id="angle-y-display">Угол Y: 0&deg;</div>
+    <div id="temp-display">Темп: 0&deg;C</div>
+  </div>
+
+  <div id="joystick-container">
+    <div id="joystick-stick"></div>
+  </div>
+
+  <div class="sos-panel">
+    <span>РЕЖИМ SOS</span>
+
+<label class="switch">
+  <input type="checkbox" id="sos-btn">
+  <span class="slider"></span>
+</label>
+
+  </div>
+
+  <div id="status">СВЯЗЬ...</div>
+
+  <script src="/script.js"></script>
+
+</body>
+</html>
